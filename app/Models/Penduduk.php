@@ -6,18 +6,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class M_desa extends Model
+class Penduduk extends Model
 {
     use softDeletes;
-    protected $table = "desa";
+    protected $table = "penduduk";
     protected $fillable = [
-        'nama_kk',
-        'alalmat',
-        'jumlah_kk',
+        '',
     ];
     protected $hidden;
-    public function penduduk()
+    public function desa()
     {
-        return $this->hasMany(Penduduk::class);
+        return $this->belongsTo(M_desa::class);
     }
 }
+
+
