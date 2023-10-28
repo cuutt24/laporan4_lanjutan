@@ -1,5 +1,6 @@
-@extends('layout.default')
-
+@extends('main')
+@section('ti
+tle','dashboard')
 @section('content')
 <section>
 <div class="container mt-5">

@@ -1,7 +1,7 @@
-@extends('layout.default')
-
+@extends('main')
+@section('ti
+tle','tambah')
 @section('content')
-
 <section>
     <div class="container">
         <div class="row">
